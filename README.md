@@ -17,3 +17,18 @@ logstash.bat -f ../config/logstash.conf
  - kibana  
 进入kibana/bin  
 双击kibana.bat
+   
+#### ubuntu 21.04
+ - elasticsearch  
+```shell
+./bin/elasticsearch
+```
+ - logstash  
+```shell
+./bin/logstash -f ./config/logstash.conf
+```
+指定运行的配置文件，可以写多个，运行时指定  
+ - kibana
+```shell
+./bin/kibana
+```
