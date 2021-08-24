@@ -117,4 +117,5 @@ output {
     
 ### reference
 1. https://github.com/logstash/logstash-logback-encoder#tcp-appenders  
-2. https://chrome.google.com/webstore/detail/elasticsearch-head/ffmkiejjmecolpfloofpjologoblkegm  
+2. https://elasticvue.com  
+3. https://chrome.google.com/webstore/detail/elasticsearch-head/ffmkiejjmecolpfloofpjologoblkegm  
