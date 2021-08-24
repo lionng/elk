@@ -18,11 +18,11 @@ public class ElkTests {
     public void log() {
         //日志的级别
         //从上到下---由低到高
-        logger.trace("我是一个trace");
-        logger.debug("我是一个debug");
-        logger.info("我是一个info");
-        logger.warn("我是一个warn");
-        logger.error("我是一个error");
+        logger.trace("test one trace");
+        logger.debug("test one debug");
+        logger.info("test one info");
+        logger.warn("test one warn");
+        logger.error("test one error");
     }
 
 }

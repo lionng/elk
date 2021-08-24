@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <!--指定日志文件路径和名称-->
-    <property name="LOG_FILE" value="/tmp/zhang/log/elk11.log"/>
+    <property name="LOG_FILE" value="/tmp/zhang/log/elk.log"/>
     <!--springboot默认的文件路径,在临时文件目录下创建spring.log日志文件-->
 <!--    <property name="LOG_FILE" value="${LOG_FILE:-${LOG_PATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}/}spring.log}"/>-->
 
@@ -12,7 +12,7 @@
 
     <!--logstash-->
     <appender name="LOGSTASH" class="net.logstash.logback.appender.LogstashTcpSocketAppender">
-        <destination>127.0.0.1:4560</destination>
+        <destination>localhost:4560</destination>
         <!-- encoder is required -->
         <encoder class="net.logstash.logback.encoder.LogstashEncoder" />
     </appender>
@@ -22,6 +22,6 @@
     <root level="INFO">
         <appender-ref ref="CONSOLE" />
         <appender-ref ref="FILE" />
-        <appender-ref ref="LOGSTASH"/>
+        <appender-ref ref="LOGSTASH" />
     </root>
 </configuration>
